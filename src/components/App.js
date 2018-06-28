@@ -4,6 +4,7 @@ import Nav from './Nav'
 import hogs from '../porkers_data';
 
 import HogList from './HogList'
+import Filter from './Filter'
 
 class App extends Component {
 
@@ -18,10 +19,15 @@ componentDidMount() {
   })
 }
 
+handleFilter() {
+  
+}
+
   render() {
     return (
       <div className="App">
         <Nav />
+        <Filter />
         <HogList hogs={this.state.hogs}/>
 
       </div>
